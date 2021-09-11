@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <title>Story Boxes</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <style>
+    body{
+	  padding:0;
+	  margin:0;
+	  box-sizing:border-box;
+	}
+
+	.container{
+	  position:relative;
+	  background:gray;
+	  display:flex;
+	  justify-content:space-between;
+	  align-items:center;
+	  
+	  margin: 150px auto;
+	  height:300px;
+	  width:1200px;
+	}
+	.container .box{
+	  position:relative;
+	  width:calc(400px - 30px);
+	  height:calc(300px - 30px);
+	  background:green;
+	  margin:15px;
+	  overflow:hidden;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  border-radius:10px;
+	}
+	.container .box .icon{
+	  
+	  background:#f00;
+	  transform:scale(5);
+	  padding:10px;
+	  border-radius:50%;
+	  opacity:1;
+	  transition:transform 500ms,opacity 500ms;
+	}
+	.container .box:hover .icon{
+	  transform: scale(3.5);
+	  transform: translateY(-150%);
+	  opacity:0.7;
+	}
+	.container .box p{
+	  position:absolute;
+	  text-align;center;
+	  color:white;
+	  font-weight:1000;
+	  font-size:20px;
+	  margin:20px;
+	  padding:15px;
+	  transform:translateY(210%);
+	  transition: transform 500ms;
+	}
+	.container .box:hover p{
+	  transform:translateY(0);
+	}
+	
+  </style>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="box">
+	  <div class="icon"><i class="fas fa-book"></i></div>
+	  <p> "What shall we do on holiday?" Abhishek asked Tripti. <br/><br/>"Trekking with Sherpas?" <br/>"Camping with the Himalayans?"</p>
+	</div>
+	<div class="box">
+	  <div class="icon"><i class="fas fa-laptop"></i></div>
+	  <p> "Snowing with Himachalis?" suggested Tripti. <br/><br/>
+		  Abhishek and Tripti loved cultural adventure; meeting strangers and making friends.
+	  </p>
+	</div>
+	<div class="box">
+	  <div class="icon"><i class="fas fa-th"></i></div>
+	  <p> "The house will be empty. Better inform the next door neighbour," warned Abhishek.<br/> <br/> "I wonder what
+	  his name is?"</p>
+	</div>
+  </div>
+</body>
+</html>
