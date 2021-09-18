@@ -1,9 +1,5 @@
 # StoryBoard
-A short story web page using HTML and CSS Animations.
-The CSS concepts used are :
-a) Flex Box
-b) Positioning
-c) Transition
-d) Transform
+A web page to share a short story.
 
-Enjoy a short story presented just using basic HTML and CSS.
+Enjoy the short story presented in front of you in the way you will never forget.
+
